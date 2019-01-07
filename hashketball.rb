@@ -185,7 +185,7 @@ def player_numbers(team_name)
    game_hash.each do |location, team|
     team.each do |category, values|
       if values = team_name 
-        
+    team.each do |category, values|    
       if category == :players
         values.each do |player, stats| 
           
@@ -197,6 +197,7 @@ def player_numbers(team_name)
     end
   end
   end
+end
 end
 end
   number_array.sort
