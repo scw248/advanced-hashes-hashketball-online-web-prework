@@ -183,10 +183,9 @@ def player_numbers(team_name)
   number_array = []
   
    game_hash.each do |location, team|
-    team.each do |category, players|
-      binding.pry
-      if category == :players
-        players.each do |player, stats| 
+    team.each do |category, values|
+      if values = team_name && category == :players
+        values.each do |player, stats| 
           
           stats.each do |stat, number|
           if stat == :number
