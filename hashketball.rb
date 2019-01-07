@@ -248,8 +248,10 @@ end
 end
 end
 end
-
-largest_shoe_index = shoe_array.index {|x| x == x.max }
+largest_shoe = nil
+largest_shoe_index = shoe_array.each do ||
+  
+  
 return rebounds_array[largest_shoe_index]
 end
   
