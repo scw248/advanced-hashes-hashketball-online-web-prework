@@ -187,14 +187,16 @@ def player_numbers(team_name)
       
       if category == :players
         players.each do |player, stats| 
-          binding.pry
-          if stats == :number
-            number_array << stats[:number]
+          
+          stats.each do |stat, number|
+          if stat == :number
+            number_array << number
           end
         end
     end
   end
   end
+end
   number_array.sort
 end
 
