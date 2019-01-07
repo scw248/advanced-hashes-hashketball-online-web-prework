@@ -205,8 +205,20 @@ end
 end
 
 
-def player_stats(player)
-  
+def player_stats(person)
+    game_hash.each do |location, team|
+    team.each do |category, players|
+      
+      if category == :players
+        players.each do |player, stats|
+          
+          if player == person
+            return stats
+          end
+        end
+    end
+  end
+  end
 end
   
 
