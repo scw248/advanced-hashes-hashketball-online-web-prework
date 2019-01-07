@@ -224,6 +224,8 @@ end
 
 
 def big_shoe_rebounds
+  shoe_array = []
+  
   game_hash.each do |location, data|
     data.each do |category, values|
     
