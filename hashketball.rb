@@ -183,8 +183,9 @@ def player_numbers(team_name)
   number_array = []
   
    game_hash.each do |location, data|
+     binding.pry
     data.each do |category, values|
-      binding.pry
+      
       if values == team_name 
         #ISSUE IS HERE
       
