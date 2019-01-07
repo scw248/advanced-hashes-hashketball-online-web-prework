@@ -169,6 +169,7 @@ def team_names()
   team_array = []
   game_hash.each do |location, team|
     team.each do |category, values|
+      binding.pry
     if category == :team_name
       team_array << category[:team_name]
     end
