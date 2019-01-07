@@ -171,7 +171,7 @@ def team_names()
     team.each do |category, values|
       binding.pry
     if category == :team_name
-      team_array << category[:team_name]
+      team_array << category[values]
     end
   end
 end
