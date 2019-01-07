@@ -249,7 +249,7 @@ end
 end
 end
 
-largest_shoe_index = shoe_array.index
+largest_shoe_index = shoe_array.index {|x| x == x.max }
 return rebounds_array[largest_shoe_index]
 end
   
