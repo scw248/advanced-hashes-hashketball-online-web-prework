@@ -187,7 +187,8 @@ def player_numbers(team_name)
       binding.pry
       if values == team_name 
         #ISSUE IS HERE
-        
+      
+      data.each do |category, values|  
       if category == :players
         values.each do |player, stats| 
           
