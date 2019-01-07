@@ -225,6 +225,7 @@ end
 
 def big_shoe_rebounds
   shoe_array = []
+  rebounds_array = []
   
   game_hash.each do |location, data|
     data.each do |category, values|
@@ -233,11 +234,12 @@ def big_shoe_rebounds
         values.each do |player, stats| 
           
           stats.each do |stat, number|
-          if stat == :shoe && number == number.max
+          if stat == :shoe 
+            shoe_array << number
             
           stats.each do |stat, number|
             if stat == :rebounds
-              return number
+            rebounds_array << number
           end
         end
     end
