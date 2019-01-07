@@ -248,6 +248,9 @@ end
 end
 end
 end
+
+shoe_array.each
+
 end
   
 
