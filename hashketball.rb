@@ -171,6 +171,7 @@ def team_names()
     team.each do |category, values|
     if category == :team_name
       team_array << category[:team_name]
+    end
   end
 end
 team_array
