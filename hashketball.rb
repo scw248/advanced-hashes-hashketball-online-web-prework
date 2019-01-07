@@ -256,7 +256,7 @@ largest_shoe_index = shoe_array.each do |size|
   shoe_array.index(largest_shoe)
 end
   
-rebounds_array[largest_shoe_index]
+rebounds_array[shoe_array.index(largest_shoe)]
 end
   
 
