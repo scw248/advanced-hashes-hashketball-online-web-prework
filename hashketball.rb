@@ -190,7 +190,7 @@ def player_numbers(team_name)
           binding.pry
           
           if stats == :number
-            number_array << stats
+            number_array << stats[:number]
           end
         end
     end
