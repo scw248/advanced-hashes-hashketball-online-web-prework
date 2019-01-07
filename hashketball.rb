@@ -205,7 +205,9 @@ end
 end
 
 
-def player_with_longest_name
+def player_stats(player)
+  
+end
   
 
 
