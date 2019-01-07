@@ -251,6 +251,7 @@ end
 largest_shoe = nil
 largest_shoe_index = shoe_array.each do |size|
   if largest_shoe == nil || size > largest_shoe
+    binding.pry
     largest_shoe = size
   end
   shoe_array.index(largest_shoe)
