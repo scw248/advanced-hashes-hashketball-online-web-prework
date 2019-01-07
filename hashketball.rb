@@ -166,12 +166,14 @@ def team_colors(team_name_given)
   
 
 def team_names()
-  game_hash.collect do |location, team|
+  team_array = []
+  game_hash.each do |location, team|
     binding.pry
     if team == :team_name
-      team[:team_name]
+      team_array << team[:team_name]
   end
 end
+team_array
 end
   
 
