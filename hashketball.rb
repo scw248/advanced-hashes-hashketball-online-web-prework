@@ -221,6 +221,8 @@ def player_stats(person)
   end
 end
 
+
+
 def big_shoe_rebounds
   game_hash.each do |location, data|
     data.each do |category, values|
@@ -235,12 +237,8 @@ def big_shoe_rebounds
         end
     end
   end
-  end
-end
-end
 end
   number_array.sort
-end
 end
   
 
