@@ -191,7 +191,7 @@ def player_numbers(team_name)
         values.each do |player, stats| 
           
           stats.each do |stat, number|
-          if stat == :number
+          if stat == :shoe
             number_array << number
           end
         end
@@ -219,6 +219,28 @@ def player_stats(person)
     end
   end
   end
+end
+
+def big_shoe_rebounds
+  game_hash.each do |location, data|
+    data.each do |category, values|
+    
+      if category == :players
+        values.each do |player, stats| 
+          
+          stats.each do |stat, number|
+          if stat == :number
+            number_array << number
+          end
+        end
+    end
+  end
+  end
+end
+end
+end
+  number_array.sort
+end
 end
   
 
