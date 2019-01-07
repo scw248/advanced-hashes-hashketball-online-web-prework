@@ -186,7 +186,7 @@ def player_numbers(team_name)
     data.each do |category, values|
       if values == team_name 
       
-      #data.each do |category, values|  
+      data.each do |category, values|  
       if category == :players
         values.each do |player, stats| 
           
