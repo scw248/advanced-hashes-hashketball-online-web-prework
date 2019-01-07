@@ -184,7 +184,7 @@ def player_numbers(team_name)
   
    game_hash.each do |location, team|
     team.each do |category, players|
-      
+      binding.pry
       if category == :players
         players.each do |player, stats| 
           
