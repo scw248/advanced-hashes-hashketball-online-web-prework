@@ -252,8 +252,8 @@ largest_shoe = nil
 largest_shoe_index = shoe_array.each do |size|
   if largest_shoe == nil || size > largest_shoe
     largest_shoe = size
-    shoe_array.index(largest_shoe)
   end
+  shoe_array.index(largest_shoe)
 end
   
 return rebounds_array[largest_shoe_index]
