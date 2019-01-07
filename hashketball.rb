@@ -249,7 +249,7 @@ end
 end
 end
 
-shoe_array.each
+shoe_array.find_index {|num| num.max }
 
 end
   
