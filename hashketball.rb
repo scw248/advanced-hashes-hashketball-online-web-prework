@@ -166,8 +166,11 @@ def team_colors(team_name_given)
   
 
 def team_names()
-  game_hash.each do |location, team|
-    
+  game_hash.collect do |location, team|
+    if team == :team_name
+      team[:team_name]
+  end
+end
 end
   
 
