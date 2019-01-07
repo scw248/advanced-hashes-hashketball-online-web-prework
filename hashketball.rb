@@ -191,7 +191,7 @@ def player_numbers(team_name)
         values.each do |player, stats| 
           
           stats.each do |stat, number|
-          if stat == :shoe
+          if stat == :number
             number_array << number
           end
         end
