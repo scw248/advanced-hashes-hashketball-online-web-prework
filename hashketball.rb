@@ -188,7 +188,6 @@ def player_numbers(team_name)
       if values == team_name 
         #ISSUE IS HERE
         
-    team.each do |category, values|    
       if category == :players
         values.each do |player, stats| 
           
