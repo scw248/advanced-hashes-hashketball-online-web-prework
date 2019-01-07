@@ -231,7 +231,7 @@ def big_shoe_rebounds
         values.each do |player, stats| 
           
           stats.each do |stat, number|
-          if stat == :number
+          if stat == :shoe && number == number.max
             number_array << number
           end
         end
