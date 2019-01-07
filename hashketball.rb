@@ -188,8 +188,9 @@ def player_numbers(team_name)
       if category == :players
         players.each do |player, stats|
           
+          
           if stats == :number
-            number_array << stats
+            number_array << stats[:number]
           end
         end
     end
