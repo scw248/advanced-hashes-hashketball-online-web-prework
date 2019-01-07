@@ -232,13 +232,15 @@ def big_shoe_rebounds
           
           stats.each do |stat, number|
           if stat == :shoe && number == number.max
-            number_array << number
+            
+          stats.each do |stat, number|
+            if stat == :rebounds
+              return number
           end
         end
     end
   end
 end
-  number_array.sort
 end
 end
   
