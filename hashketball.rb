@@ -168,8 +168,9 @@ def team_colors(team_name_given)
 def team_names()
   team_array = []
   game_hash.each do |location, team|
-    if team == :team_name
-      team_array << team[:team_name]
+    team.each do |category, values|
+    if category == :team_name
+      team_array << category[:team_name]
   end
 end
 team_array
